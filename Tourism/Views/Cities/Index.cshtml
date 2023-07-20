@@ -1,0 +1,7 @@
+﻿<h1>All Cities</h1>
+@model List<City>
+
+@foreach (var city in Model)
+{
+    <p><strong>@city.Name</strong>: <a href="cities/@city.Id">@city.Name</a></p>
+}

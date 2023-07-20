@@ -51,6 +51,8 @@ namespace Tourism.FeatureTests
             Assert.DoesNotContain("Colorado", html);
         }
 
+
+
         private TourismContext GetDbContext()
         {
             var optionsBuilder = new DbContextOptionsBuilder<TourismContext>();
@@ -62,5 +64,6 @@ namespace Tourism.FeatureTests
 
             return context;
         }
+
     }
 }

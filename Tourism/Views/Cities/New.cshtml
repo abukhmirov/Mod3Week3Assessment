@@ -1,11 +1,11 @@
 ﻿@model State
 
-<h2>Add city to @Model.Name</h2>
+<h2>Add city to @Model.Name </h2>
 
-<form>
+<form method="post" action="/states/@Model.Id/cities">
     <div class="form-group">
         <label for="Name">Name: </label>
         <input type="text" id="Name" name="Name" />
     </div>
-    <button type="submit">Add City</button>
+    <button type="submit">New City</button>
 </form>
